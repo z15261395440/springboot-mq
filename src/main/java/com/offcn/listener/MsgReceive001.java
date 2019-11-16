@@ -7,6 +7,7 @@ import java.util.Map;
 
 @Component
 public class MsgReceive001 {
+    //更新 13.58分
     @JmsListener(destination = "mq-test001")
     public void receiveMsg(String msg){
         System.out.println(msg+"接收到消息");
