@@ -13,7 +13,7 @@ public class SendMsgController {
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
 
-    //发出消息
+    //发出消息  19.42
     @RequestMapping("/sendMsg")
     public String sendMsg(String msg){
         jmsMessagingTemplate.convertAndSend("mq-test001",msg);
